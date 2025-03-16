@@ -15,7 +15,7 @@ type Category = {
 
 const Categories = () => {
   
-  const [categories, setCategories] = useState<Category[]>(categoriesData)
+  const [categories] = useState<Category[]>(categoriesData)
 
   return (
     <div className="category">

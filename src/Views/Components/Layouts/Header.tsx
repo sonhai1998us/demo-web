@@ -6,8 +6,6 @@ import { useState } from "react";
 import { useParams } from "next/navigation";
 
 export default function Header() {
-
-    const router = useParams();;
     const [isOpenMenu, setOpenMenu] = useState(false);
 
     const handleOpenMenu = (): void => {

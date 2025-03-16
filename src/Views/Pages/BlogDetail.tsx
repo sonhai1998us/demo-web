@@ -25,7 +25,7 @@ type Product = {
 const DetailPage = () => {
 
     const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
-    const [products, setProducts] = useState<Product[]>(productsData);
+    const [products] = useState<Product[]>(productsData);
 
     const params = useParams();
 
@@ -99,7 +99,7 @@ const DetailPage = () => {
                                             </div>
                                         </div>
                                         <div dangerouslySetInnerHTML={{ __html: product.content || '' }} />
-                                    </div> : <h1 className="text-2xl font-bold">Chưa có nội dung</h1>
+                                    </div> : <h1 key={product.id} className="text-2xl font-bold">Chưa có nội dung</h1>
                             )
                         ) : (
                             <></>

@@ -15,7 +15,7 @@ type Ads = {
 
 const Ads = () => {
 
-  const [ads, setAds] = useState<Ads[]>(adsData)
+  const [ads] = useState<Ads[]>(adsData)
 
   return (<>
     {ads.map((ad) => (
