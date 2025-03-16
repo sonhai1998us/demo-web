@@ -141,3 +141,7 @@ ul li::marker {
     background-position: 1000px 0;
   }
 }
+
+.list-none{
+  list-style-type: none !important;
+}
